@@ -1,6 +1,6 @@
 {
-  "name": "region-wrapper",
-  "displayName": "Region Wrapper",
+  "name": "cdh-region-wrapper",
+  "displayName": "Newlined Region Wrapper",
   "description": "A VS Code extension to easily wrap code blocks in regions, with a view to display them in the Activity Bar",
   "version": "1.0.0",
   "engines": {
@@ -52,12 +52,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/swssr/region-wrapper"
+    "url": "https://github.com/ChaseHaley/region-wrapper"
   },
-  "publisher": "swssr",
+  "publisher": "ChaseHaley",
   "icon": "resources/icon.png",
   "bugs": {
-    "url": "https://github.com/swssr/region-wrapper/issues"
+    "url": "https://github.com/ChaseHaley/region-wrapper/issues"
   },
-  "homepage": "https://github.com/swssr/region-wrapper/blob/main/README.md"
+  "homepage": "https://github.com/ChaseHaley/region-wrapper/blob/main/README.md"
 }
