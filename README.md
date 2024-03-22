@@ -19,13 +19,3 @@ This is a forked repository of [swssr's Region Wrapper](https://github.com/swssr
 4. The selected code will be wrapped in `#region` and `#endregion` comments.
 
 The tree view in the Activity Bar will automatically update to reflect the current regions in each file.
-
-## Known Issues
-
-Please report any bugs or feature requests in the [GitHub issues](https://github.com/swssr/region-wrapper.git/issues) for this project.
-
-## Release Notes
-
-### 1.0.0
-
-Initial release of Region Folding Extension for VS Code.
