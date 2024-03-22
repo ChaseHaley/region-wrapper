@@ -1,6 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
+import { QuickPickItem } from 'vscode';
 
 class FileItem extends vscode.TreeItem {
   constructor(public readonly uri: vscode.Uri) {
@@ -69,9 +70,75 @@ export function activate(context: vscode.ExtensionContext) {
       let text = editor.document.getText(selection);
 
       //Prompt user to enter region name
-      const regionName = await vscode.window.showInputBox({
-        prompt: 'Enter the region name.',
-      });
+      let regionName = (await vscode.window.showQuickPick<QuickPickItem>([
+        {
+          label: '0',
+          description: 'Custom'
+        },
+        {
+          label: '1',
+          description: 'Using Directives',
+        },
+        {
+          label: '2',
+          description: 'Private Data Members'
+        },
+        {
+          label: '3',
+          description: 'Constructors'
+        },
+        {
+          label: '4',
+          description: 'Public Properties'
+        },
+        {
+          label: '5',
+          description: 'Internal Properties'
+        },
+        {
+          label: '6',
+          description: 'Private Properties'
+        },
+        {
+          label: '7',
+          description: 'Public Methods'
+        },
+        {
+          label: '8',
+          description: 'Public Events'
+        },
+        {
+          label: '9',
+          description: 'Internal Methods'
+        },
+        {
+          label: '10',
+          description: 'Protected Methods'
+        },
+        {
+          label: '11',
+          description: 'Private Methods'
+        },
+        {
+          label: '12',
+          description: 'Private Event Handlers'
+        },
+        {
+          label: '13',
+          description: 'Private Types',
+          detail: 'Test'
+        },
+      ], {
+        canPickMany: false,
+        matchOnDescription: true,
+        matchOnDetail: true
+      }))?.description;
+
+      if (regionName === 'Custom') {
+        regionName = await vscode.window.showInputBox({
+            prompt: 'Enter the region name.',
+          });
+      }
 
       if (!regionName) {
         return;
