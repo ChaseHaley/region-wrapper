@@ -125,8 +125,7 @@ export function activate(context: vscode.ExtensionContext) {
         },
         {
           label: '13',
-          description: 'Private Types',
-          detail: 'Test'
+          description: 'Private Types'
         },
       ], {
         canPickMany: false,
