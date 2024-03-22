@@ -1,5 +1,5 @@
 # Notice
-This is a forked repository of [swssr's Region Wrapper]((https://github.com/swssr/region-wrapper)) VSCode extension. I currently have no plans to publish this extension on the VSCode store, but that may change should I further flesh out this extension. I simply forked swssr's implementation as it largely did what I wanted, but I wanted to add some personal tweaks that added some behaviors found in the Visual Studio extension [Menees VS Tools]((https://marketplace.visualstudio.com/items?itemName=BillMenees.MeneesVSTools2022)) that I was used to working with.
+This is a forked repository of [swssr's Region Wrapper](https://github.com/swssr/region-wrapper) VSCode extension. I currently have no plans to publish this extension on the VSCode store, but that may change should I further flesh out this extension. I simply forked swssr's implementation as it largely did what I wanted, but I wanted to add some personal tweaks that added some behaviors found in the Visual Studio extension [Menees VS Tools](https://marketplace.visualstudio.com/items?itemName=BillMenees.MeneesVSTools2022) that I was used to working with.
 
 # Region Folding Extension for Visual Studio Code
 
