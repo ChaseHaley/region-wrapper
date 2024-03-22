@@ -77,12 +77,12 @@ export function activate(context: vscode.ExtensionContext) {
         return;
       }
 
-      let startRegion = "#region";
-      let endRegion = "#endregion";
+      let startRegion = "// #region";
+      let endRegion = " // #endregion";
       switch (editor?.document.languageId) {
-        case 'typescript':
-          startRegion = "// " + startRegion;
-          endRegion = "// " + endRegion;
+        case 'csharp':
+          startRegion = "#region";
+          endRegion = "#endregion";
           break;
       }
 
