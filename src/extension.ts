@@ -77,7 +77,16 @@ export function activate(context: vscode.ExtensionContext) {
         return;
       }
 
-      const wrappedCode = `#region ${regionName}\n\n${text}\n\n#endregion`;
+      let startRegion = "#region";
+      let endRegion = "#endregion";
+      switch (editor?.document.languageId) {
+        case 'typescript':
+          startRegion = "// " + startRegion;
+          endRegion = "// " + endRegion;
+          break;
+      }
+
+      const wrappedCode = `${startRegion} ${regionName}\n\n${text}\n\n${endRegion}`;
 
       // Replace selection with wrapped version.
       editor.edit((editBuilder) => editBuilder.replace(selection, wrappedCode));
