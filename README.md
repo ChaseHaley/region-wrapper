@@ -8,7 +8,7 @@ This extension for Visual Studio Code allows users to easily wrap blocks of code
 ## Features
 
 - Easily wrap selected code in `#region` and `#endregion` comments
-- Assign a custom name to each region
+- Choose from a predefined list of names or assign a custom name to each region
 - View a list of regions in each file in the Activity Bar
 
 ## Usage
