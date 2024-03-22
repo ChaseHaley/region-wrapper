@@ -130,7 +130,8 @@ export function activate(context: vscode.ExtensionContext) {
       ], {
         canPickMany: false,
         matchOnDescription: true,
-        matchOnDetail: true
+        matchOnDetail: true,
+        placeHolder: 'Select a region name, or select "Custom" to input a custom name'
       }))?.description;
 
       if (regionName === 'Custom') {
